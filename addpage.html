@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Task</title>
+  <link rel="stylesheet" href="Mystyle.css">
+</head>
+<body>
+  <header>
+    <h1>Add New Task</h1>
+    <nav>
+      <a href="Myindex.html">Home</a>
+      <a href="add.html">Add Task</a>
+      <a href="task.html">View Tasks</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="taskForm">
+      <label>Task Name:</label>
+      <input type="text" id="taskName" required>
+
+      <label>Due Date:</label>
+      <input type="date" id="dueDate" required>
+
+      <label>Priority:</label>
+      <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <button type="submit" class="btn">Add Task</button>
+    </form>
+
+    <div id="message"></div>
+  </main>
+
+  <script src="Myscript.js"></script>
+</body>
+</html>
